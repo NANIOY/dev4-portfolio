@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+
+    <div id="maze">
+        <div id="overlay"></div>
+        <button id="orientationButton">Enable Device Orientation</button>
+        <div id="end"></div>
+        <div id="wall1" class="wall"></div>
+        <div id="wall2" class="wall"></div>
+        <div id="wall3" class="wall"></div>
+        <div id="wall4" class="wall"></div>
+        <div id="player"></div>
+    </div>
+    <div id="topleft">
+        <div id="scoreCounter">Score: 0</div>
+        <button id="resetButton">Reset Player Position</button>
+    </div>
+
+    <button class="back-button" style="z-index: 9999;">
+        <img src="../images/icons/back.svg" alt="back button">
+        <span>BACK</span>
+    </button>
+
+
+    <script src="script.js"></script>
+    <script src="../script/back.js"></script>
+</body>
+
+</html>

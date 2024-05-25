@@ -1,0 +1,124 @@
+body {
+    background-color: #111111;
+    color: #f2f2f2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.header__model--status {
+    font-size: 1rem;
+    text-align: center;
+}
+
+video {
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
+.webcam-container {
+    position: relative;
+    display: inline-block;
+}
+
+#webcam {
+    display: block;
+}
+
+.switch-camera-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.switch-camera-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.captureButton {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 16px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(93, 44, 240);
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0);
+    color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    white-space: nowrap;
+}
+
+.captureButton:hover {
+    background-color: rgb(74, 30, 206);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#capturedImage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #151515;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.result-container p {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}

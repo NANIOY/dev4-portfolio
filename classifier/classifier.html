@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Classifier</title>
+  <script src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+  <button class="back-button">
+    <img src="../images/icons/back.svg" alt="back button">
+    <span>BACK</span>
+  </button>
+  <h1 class="header__title">Image Classifier</h1>
+
+  <div class="webcam-container">
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    <button id="switchCameraButton" class="switch-camera-button">
+      <i class="fas fa-sync-alt"></i>
+    </button>
+  </div>
+  <button class="captureButton" disabled>Model loading...</button>
+  <h2>Classification Result:</h2>
+  <div id="capturedImage"></div>
+
+  <script src="main.js"></script>
+  <script src="../script/back.js"></script>
+</body>
+
+</html>
