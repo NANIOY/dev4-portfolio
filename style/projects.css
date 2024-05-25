@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 48px;
     max-width: 1312px;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,7 @@
 }
 
 .projects-container-top {
-    margin-top: 112px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,17 +20,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project-horizontal {
     width: 640px;
-    margin-bottom: 32px;
     float: none;
 }
 
 .project-vertical {
     width: 640px;
-    margin-bottom: 20px;
     margin-left: auto;
 }
 
@@ -134,7 +133,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: -10px;
+    margin-top: 20px;
 }
 
 .column-header h2 {
