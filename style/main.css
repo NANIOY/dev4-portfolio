@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Twilio-Sans-Mono-ExtraBold';
+    src: url('../fonts/heading/TwilioSansMono-Extrabold.otf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Twilio-Sans-Mono-Bold';
+    src: url('../fonts/heading/TwilioSansMono-Bold.otf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sloth-Regular';
+    src: url('../fonts/body/Sloth-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sloth-SemiBold';
+    src: url('../fonts/body/Sloth-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sloth-Bold';
+    src: url('../fonts/body/SLOTH\ BOLD.ttf') format('truetype');
+    font-display: swap;
+}
+
+
+:root {
+    /* neutral colors */
+    --neutral-10-white: #f5f5f5;
+    --neutral-20: #CDCDCD;
+    --neutral-30: #B4B4B4;
+    --neutral-40: #9B9B9B;
+    --neutral-50: #828282;
+    --neutral-60: #686868;
+    --neutral-70: #4F4F4F;
+    --neutral-80: #363636;
+    --neutral-90: #1D1D1D;
+    --neutral-100-black: #040404;
+    --neutral-100-transparent: rgba(4, 4, 4, 0.8);
+
+    /* green */
+    --green-10: #9CFBAB;
+    --green-20: #6AF980;
+    --green-30: #39F756;
+    --green-40-baseline: #07F52C;
+    --green-50: #06C423;
+    --green-60: #04931A;
+    --green-70: #036212;
+
+    /* blurple */
+    --blurple-10: #B7A6F8;
+    --blurple-20: #927AF4;
+    --blurple-30: #6E4DF1;
+    --blurple-40-baseline: #4A21ED;
+    --blurple-50: #3B1ABE;
+    --blurple-60: #2C148E;
+    --blurple-70: #1E0D5F;
+
+    scrollbar-color: var(--neutral-70) var(--neutral-100-black);
+    scrollbar-width: thin;
+}
+
+html {
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+}
+
+p {
+    line-height: 1.4em;
+    letter-spacing: 0.2px;
+}
+
+body {
+    background-color: var(--neutral-100-black);
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--neutral-70);
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neutral-60);
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--neutral-100-black);
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container-vertical {
+    width: 624px;
+    height: 874px;
+    overflow: hidden;
+}
+
+.image-container-horizontal {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.image-zoom {
+    transition: transform 0.4s;
+}
+
+.back-button {
+    background-color: transparent;
+    color: var(--neutral-10-white);
+    border: none;
+    padding: 0;
+    font-family: 'Sloth-Bold';
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    position: absolute;
+    top: 0;
+    left: 64px;
+}
+
+.back-button img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
