@@ -131,6 +131,10 @@ img {
     transition: transform 0.4s;
 }
 
+.image-zoom:hover {
+    transform: scale(1.1);
+}
+
 .back-button {
     background-color: transparent;
     color: var(--neutral-10-white);
